@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <title>매장 DID 인증 시스템</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/css/owl.theme.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Unica+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://unpkg.com/uport-connect/dist/uport-connect.js"></script>
+
+
+
+  </head>
+    <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+        <!-- PRE LOADER -->
+      
+      <div class="preloader">
+        <div class="sk-spinner sk-spinner-pulse"></div>
+      </div>  
+      
+    <!-- Navigation Section -->
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="indexlogin.ejs" class="navbar-brand"><span></span>  DCB 매장 DID 인증 시스템</a>
+
+        </div>
+
+        <div align="right" >        
+            <td><ul><h4> <%=username%> 님 환영합니다. </h4></ul></td>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+        
+            <tr>
+              <td> <li><a href="#home" class="smoothScroll">Home</a></li> </td>
+              <td> <li><a href="/logout">Log out</a></li> </td>
+            </tr>
+            <!-- <li><a href="#home" class="smoothScroll">Home</a></li>
+            <li> <%=username%>  </li>
+            <li><a href="/logout">Log out</a></li>             -->
+          </ul>
+        </div>        
+      </div>
+    </div>
+
+  <!-- Home Section -->
+
+    <section id="home" class="main">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="wow fadeInUp col-md-6 col-sm-5 col-xs-10 col-xs-offset-3 col-sm-offset-0"
+            data-wow-delay="0.1s"
+          >
+          <!-- 0.2 / 0.6 0.8 0.8 -->
+            <img src="../public/images/store.png" class="img-responsive" alt="Home" />
+          </div>
+
+          <div class="col-md-6 col-sm-7 col-xs-12">
+            <div class="home-thumb">
+              <h1 class="wow fadeInUp" data-wow-delay="0.3s">
+                DID, Decentralized Identity
+              </h1>
+              <p class="wow fadeInUp" data-wow-delay="0.3s">
+                매장 DID 인증 시스템
+              </p>
+              <p class="wow fadeInUp" data-wow-delay="0.3s">
+                블록체인 기반 분산 모바일 신분증
+              </p>
+              <a
+              href="/store-reqverify"
+              class="wow fadeInUp section-btn btn btn-success smoothScroll"
+              
+              target="_blank">Store ReqVerify</a
+            >
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- About Section -->
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="wow bounceIn section-title">
+          <h1>분산신원확인(DID)</h1>
+          <hr />
+        </div>
+      </div>
+
+      <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+        <h2></h2>
+        <h3 class="wow fadeInUp" data-wow-delay="0.3s">
+          .
+        </h3>
+        <p class="wow fadeInUp" data-wow-delay="0.2s">
+          분산ID는 블록체인을 기반으로 한 신분증으로 이용자가 스스로가
+          자신의 신원정보를 관리하고 통제할 수 있도록 하는 디지털화 된
+          신원관리 시스템
+        </p>
+      </div>
+
+      <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+        <div class="about-thumb">
+          <img src="../public/images/picture.png" width="300" height="300" alt="분산구조도" />
+       
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+        <div class="about-thumb">
+      
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider Section -->
+
+<section id="divider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 col-sm-12">
+        <h1 class="wow fadeInUp" data-wow-delay="0.4s">
+          DCB(DID Creential Bank)
+        </h1>
+        
+      </div>
+    </div>
+
+    <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+      <div class="about-thumb">
+        <img src="../public/images/dcb.png" width="1000" height="600" alt="기본컨셉" /><br><br>
+        <img src="../public/images/didcredential.png" width="1000" height="600" alt="시스템 구조" /><br><br>
+        <img src="../public/images/dcbBank.png" width="1000" height="600" alt="세부서비스 흐름도" /><br><br>
+        <img src="../public/images/DIDtech.png" width="1000" height="600" alt="세부서비스 흐름도" />
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Screenshot Section -->
+
+<section id="screenshot">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 col-sm-12">
+        <div class="section-title">
+          <h1>DID 등장 배경</h1>
+          <h3 class="wow fadeInUp" data-wow-delay="0.8s">
+            <li>
+              현실에서 가장 중요한 가치를 담고 있는 정보는 신원(ID)에 대한 정보. 
+            </li><p></p><p></p><br>
+            <li>
+              개인의 신원 정보를 다른 누군가가 마음대로 복제할 수 있게 된다면 인터넷 환경에서 ＇나＇라는 존재 역시 무한대로 복제될 수 있음을 뜻함. 
+            </li><p></p><p></p><br>
+            <li>
+              이는 곧 복제본이 진본의 금융계좌를 마음대로 통제할 수 있으며, 공적인 서비스마저 서슴지 않고 이용할 수 있게 되는 결과를 낳을 수 있음. 때문에 현재의 인터넷 환경에서 신원정보를 공유할 때 반드시 '신뢰할 수 있는 제3자 기관(TTP)'이 보증한 인증서가 필요.
+            </li>
+          </h3>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6">
+        <div class="wow fadeInUp footer-copyright" data-wow-delay="0.4s">
+          <p>
+            Copyright &copy; 2019 Your App Starter
+            <span>||</span>
+            Design: TemplateMo
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <ul class="wow fadeInUp social-icon" data-wow-delay="0.8s">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-google-plus"></a></li>
+          <li><a href="#" class="fa fa-dribbble"></a></li>
+          <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal Contact -->
+
+<div
+  class="modal fade"
+  id="modal1"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content modal-popup">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title">LoginIn</h2>
+      </div>
+
+      <form action="#" method="post">
+        <input
+          name="id"
+          type="text"
+          class="form-control"
+          id="id"
+          placeholder="id"
+          required
+        />
+        <input
+          name="password"
+          type="password"
+          class="form-control"
+          id="pass"
+          placeholder="password"
+          required
+        />
+        <!-- <textarea
+          name="message"
+          rows="3"
+          class="form-control"
+          id="message"
+          placeholder="정보를 정확하게 입력하여 주십시오 
+          "
+          required
+        ></textarea> -->
+        <input
+          name="submit"
+          type="submit"
+          class="form-control"
+          id="submit"
+          value="login in"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- popup control -->
+<script>
+function loginPopup(){
+// control of left, right
+let popupX = (document.body.offsetWidth / 2) - (200 / 2);
+// control of top, bottom
+let popupY= (document.body.offsetHeight / 2) - (300 / 2);
+window.open('/login.ejs', 'loginPopup', 'status=no, height=300, width=200, left='+ popupX + ', top='+ popupY);
+}
+
+</script>
+
+
+<!-- Back top -->
+
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+    </body>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/magnific-popup-options.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/smoothscroll.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/custom.js"></script>
+
+
+</html>
